@@ -6,7 +6,7 @@ def apply_coupons(cart, coupons)
  
  i = 0
  
- while i < coupons.length
+ coupons.each do |key|
  item = find_item_by_name_in_collection(coupons[i][:item],cart)
  coupon_name = "#{coupons[i][:item]} W/COUPON"
  binding.pry
