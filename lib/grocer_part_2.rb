@@ -1,10 +1,24 @@
 require_relative './part_1_solution.rb'
+require 'pry'
+
 
 def apply_coupons(cart, coupons)
-  # Consult README for inputs and outputs
-  #
-  # REMEMBER: This method **should** update cart
+ 
+ i = 0
+ 
+ while i < coupons.length
+ item = find_item_by_name_in_collection(coupons[i][:item],cart)
+ coupon_name = "#{coupons[i][:item]} W/COUPON"
+ binding.pry
+ i+=1
+ end
+   
+
+  
+  
 end
+
+
 
 def apply_clearance(cart)
   # Consult README for inputs and outputs
